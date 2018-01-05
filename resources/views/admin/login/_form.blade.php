@@ -5,5 +5,5 @@
 
 <div class="input-fields">
     <label>Senha</label>
-    <input class="validate" type="password" name="email">   
+    <input class="validate" type="password" name="password">   
 </div>
