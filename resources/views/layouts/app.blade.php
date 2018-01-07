@@ -35,7 +35,7 @@
         @yield('content')
       </main> 
           
-        @include('layouts._site._footer')
+        @include('layouts._admin._footer')
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="{{asset('js/jquery-3.2.1.js')}}"></script>
