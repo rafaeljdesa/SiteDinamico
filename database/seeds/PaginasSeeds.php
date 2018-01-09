@@ -23,7 +23,7 @@ class PaginasSeeds extends Seeder
         $paginasobre->titulo = "A empresa";
         $paginasobre->descricao = "Descrição";
         $paginasobre->texto = "Texto";
-        $paginasobre->imagem = "site/img/modelo_img_home.jpg";
+        $paginasobre->imagem = "img/modelo_img_home.jpg";
         $paginasobre->tipo = "sobre";
         $paginasobre->save();
     }
