@@ -10,8 +10,7 @@ class PaginasSeeds extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run(){
         $existe = Pagina::where('tipo','=','sobre')->count();
 
         if($existe){
@@ -26,5 +25,21 @@ class PaginasSeeds extends Seeder
         $paginasobre->imagem = "img/modelo_img_home.jpg";
         $paginasobre->tipo = "sobre";
         $paginasobre->save();
+
+        $existe = Pagina::where('tipo','=','contato')->count();
+
+        if($existe){
+            $paginaContato = Pagina::where('tipo','=','contato')->first();
+        }else{
+            $paginaContato = new Pagina();
+        }
+
+        $paginaContato->titulo = "Entre em contato";
+        $paginaContato->descricao = "Preencha o formulário";
+        $paginaContato->texto = "Contato";
+        $paginaContato->imagem = "img/modelo_img_home.jpg";
+        $paginaContato->email = "teste@gmail.com";
+        $paginaContato->tipo = "contato";
+        $paginaContato->save();
     }
 }
